@@ -19,6 +19,8 @@
                   <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>    
                   <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>     
                   <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#code">Code</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#about">About</a></li> 
                 </ul>           
               </nav>
           </div>    
@@ -33,7 +35,7 @@
                     <ul class="hero__list">
                       <li class="hero__item">Telegram:<a class="hero__link" href="https://telegram.org/">+7 (927) 316-85-76</a></li>
                       <li class="hero__item">E-mail:
-                        <a class="hero__link"  href="mailto:platonovaudit@yandex.ru?subject=CV RS School">platonovaudit@yandex.ru</a>
+                        <a class="hero__link"  href="mailto:platonovaudit@yandex.ru?subject=CV_RSSchool">platonovaudit@yandex.ru</a>
                          — preferable</li>
                       <li class="hero__item">Discord:<a class="hero__link" href="https://discord.com/">347Andy</a></li>
                     </ul>
@@ -89,29 +91,65 @@
           </section>     
           <section class="experience" id="experience">
             <div class="experience__container container">
-              <h2 class="experience__title section-title">Experience</h2>   
+              <h2 class="experience__title section-title">Experience. Project examples</h2>   
               <ol class="experience__list">
                 <li class="experience__item">
-                  <h3 class="experience__item_title">University of South Australia (Adelaida)</h3>
-                  <p class="experience__date">July 2003 - December 2003</p>
-                  <p class="experience__field">Business, Audit, Accounting, Finance</p>
-                  <p class="experience__doc">Graduate certificate</p>
+                  <h3 class="experience__item_title">YandexPraktikum</h3>
+                  <p class="experience__date">September 2021 — July 2022</p>
+                  <p class="experience__field">C++ developer (training course)</p>
+                  <p class="experience__doc">Developed Transport guide. Route and stop data is stored in a catalog from a JSON document, 
+                    responses to queries are also output in JSON format and rendered in SVG format. <a class="experience__link" href="https://github.com/Andrey78945/cpp-transport-catalogue">Github</a></p>
                 </li>
                 <li class="experience__item">
-                   
+                  <h3 class="experience__item_title">Skillbox</h3>
+                  <p class="experience__date">November 2020 — present</p>
+                  <p class="experience__field">Django Framework course</p>
+                  <p class="experience__doc"><a class="experience__link" href="http://course.cj64211.tmweb.ru/">Landing project</a></p> 
                 </li>
               </ol>
             </div>
-          </section>   
+          </section>  
+          <section class="code" id="code">
+            <div class="code__container container">
+              <h2 class="code__title section-title">Code</h2>  
+              <p class="code__text">Code example: class DepthCalculator with method calculateDepth
+                that calculates depth of nested array</p>
+                <pre>
+                  <code>
+                    class DepthCalculator {
+                      calculateDepth(arr) {
+                        if (arr.every(el => !(Array.isArray(el)))) {
+                          return 1;
+                        }   
+                        let res = new Array;
+                        arr.forEach(element => {
+                          if (Array.isArray(element)) { 
+                            res.push(1 + this.calculateDepth(element)); 
+                          }
+                        });  
+                        return res.sort((a, b) => b - a)[0];
+                      }
+                    }                
+                  </code>
+                </pre>              
+            </div>
+          </section>
+          <section class="about" id="about">
+            <div class="experience__container container">
+              <h2 class="experience__title section-title">Interests</h2>  
+              <p>My hobbies are swimming, reading, learning languages. I am taking courses on algorithms at Stepik, love black humor, do not watch TV.</p>
+            </div>
+          </section>               
         </main>  
         <footer class="footer">
           <div class="footer__container container">    
             <nav class="header__nav footer__nav">
               <ul class="nav__list footer__list">
-                <li class="nav__item footer__item"><a class="nav__link active" href="https://rs.school/js-en/">Javascript/Front-end Mentoring Program (in English)</a></li>    
-                <li class="nav__item footer__item"><a class="nav__link" href="#map">Map</a></li>    
-                <li class="nav__item footer__item"><a class="nav__link" href="#zoos">Zoos</a></li>     
-                <li class="nav__item"><a class="nav__link" href="#contacts">Contact&nbsp;us</a></li>
+                <li class="nav__item footer__item logo">
+                  <img class="footer__logo" src="/logo-rsschool3.png" alt="Logotype">
+                  <a class="nav__link footer__link" href="https://rs.school/js-en/">Javascript/Front-end Mentoring Program (in English)</a></li>    
+                <li class="nav__item footer__item"><time datetime="2022-10">September 2022</time></li>    
+                <li class="nav__item footer__item"><a class="nav__link footer__link" href="https://github.com/Andrey78945">Github</a></li>  
               </ul>           
             </nav>    
           </div>

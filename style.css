@@ -95,7 +95,7 @@ html {
     
   .header__nav {
     position: relative;  
-    width: 80%;   
+    width: 80%;      
   }
   
   .nav__list { 
@@ -103,6 +103,7 @@ html {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    list-style: none;
   }    
   
   .nav__link { 
@@ -146,6 +147,37 @@ html {
   }
 
   .skills__link:active {
+    color: red;
+  }
+
+  .experience__link {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .footer {
+    position: relative;
+    padding: 10px; 
+    width: 100%; 
+    font-weight: 500;
+    color: black;  
+    background-color: yellow;
+  }
+
+  .footer__container {
+    padding: 0;
+  }
+
+  .footer__logo {
+    width: 83px;
+    height: 30px;
+  } 
+
+  .footer__link:hover {
+    color: blue;
+  }
+
+  .footer__link:active {
     color: red;
   }
    
