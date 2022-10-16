@@ -1,0 +1,151 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+      padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: black;
+    background-color: white;  
+  }
+  
+  img,
+  picture {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  a {
+    position: relative;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  ol, 
+  ul {
+    margin: 0;
+    padding: 0; 
+  }
+    
+  .site-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 0 auto; 
+    padding: 50px;
+    width: 100%;
+    max-width: 1160px; 
+  }
+    
+  .section-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+   
+  .header {
+    position: relative;
+    padding: 14px 0; 
+    width: 100%; 
+    font-weight: 500;
+    color: white;  
+    background-color: blue;
+  }
+  
+  .header__container {
+    position: relative; 
+    display: flex; 
+    align-items: center;  
+    justify-content: center;   
+    padding: 0;         
+  }
+    
+  .header__nav {
+    position: relative;  
+    width: 80%;   
+  }
+  
+  .nav__list { 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }    
+  
+  .nav__link { 
+    transition: all .4s ease;
+  }
+  
+  .nav__link:hover {
+    color: gold;    
+  }
+  
+  .nav__link:active {
+    color: red;
+  }
+
+  .site__title {
+    text-align: center;
+  }
+
+  .section__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__image {
+    display: block;
+    width: 20%;
+  }
+   
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .skills__item {
+    margin-right: 15px;
+  }
+
+  .skills__link:hover {
+    color: blue;
+  }
+
+  .skills__link:active {
+    color: red;
+  }
+   
