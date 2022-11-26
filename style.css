@@ -2,7 +2,7 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -11,17 +11,17 @@ html {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
   }
-  
+
   body {
-    margin: 0; 
-    font-family: Arial, sans-serif; 
+    margin: 0;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     color: black;
-    background-color: white;  
+    background-color: white;
   }
-  
+
   img,
   picture {
     width: 100%;
@@ -30,7 +30,7 @@ html {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  
+
   a {
     position: relative;
     border: none;
@@ -39,32 +39,32 @@ html {
     color: inherit;
     cursor: pointer;
   }
-  
-  ol, 
+
+  ol,
   ul {
     margin: 0;
-    padding: 0; 
+    padding: 0;
   }
-    
+
   .site-container {
     position: relative;
     overflow: hidden;
   }
-  
+
   .container {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 50px;
     width: 100%;
-    max-width: 1160px; 
+    max-width: 1160px;
   }
-    
+
   .section-title {
     margin-bottom: 15px;
     font-size: 1.5em;
     font-weight: 600;
     line-height: 120%;
   }
-  
+
   .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -75,45 +75,45 @@ html {
     width: 1px !important;
     overflow: hidden;
   }
-   
+
   .header {
     position: relative;
-    padding: 14px 0; 
-    width: 100%; 
+    padding: 14px 0;
+    width: 100%;
     font-weight: 500;
-    color: white;  
+    color: white;
     background-color: blue;
   }
-  
+
   .header__container {
-    position: relative; 
-    display: flex; 
-    align-items: center;  
-    justify-content: center;   
-    padding: 0;         
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
-    
+
   .header__nav {
-    position: relative;  
-    width: 80%;      
+    position: relative;
+    width: 80%;
   }
-  
-  .nav__list { 
-    display: flex; 
+
+  .nav__list {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     list-style: none;
-  }    
-  
-  .nav__link { 
+  }
+
+  .nav__link {
     transition: all .4s ease;
   }
-  
+
   .nav__link:hover {
-    color: gold;    
+    color: gold;
   }
-  
+
   .nav__link:active {
     color: red;
   }
@@ -131,7 +131,7 @@ html {
     display: block;
     width: 20%;
   }
-   
+
   .skills__list {
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +140,10 @@ html {
 
   .skills__item {
     margin-right: 15px;
+  }
+
+  .skills__link {
+    text-decoration: underline;
   }
 
   .skills__link:hover {
@@ -157,10 +161,10 @@ html {
 
   .footer {
     position: relative;
-    padding: 10px; 
-    width: 100%; 
+    padding: 10px;
+    width: 100%;
     font-weight: 500;
-    color: black;  
+    color: black;
     background-color: yellow;
   }
 
@@ -171,7 +175,7 @@ html {
   .footer__logo {
     width: 83px;
     height: 30px;
-  } 
+  }
 
   .footer__link:hover {
     color: blue;
@@ -180,4 +184,3 @@ html {
   .footer__link:active {
     color: red;
   }
-   
